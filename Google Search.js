@@ -1,7 +1,7 @@
 if (gs === undefined) var gs = {};
 Game.registerMod("gs", {
   info: {
-    Name: "GS",
+    Name: "Google Search",
     Description: "Adds the ability to use Google without leaving the Cookie Clicker tab (Some websites may not work)"
   },
   init: function() {
