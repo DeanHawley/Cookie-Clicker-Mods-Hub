@@ -1,7 +1,7 @@
-if (ccsm === undefined) var ccsm = {};
-Game.registerMod("ccsm", {
+if (ccs === undefined) var ccs = {};
+Game.registerMod("ccs", {
   info: {
-    Name: "CCSM",
+    Name: "Cookie Clicker Steam",
     Description: "Meant to replicate Cookie Clicker for Steam"
   },
   init: function () {
