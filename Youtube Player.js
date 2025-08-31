@@ -3,7 +3,7 @@ if (typeof yp === 'undefined') var yp = {};
 Game.registerMod("YP", {
     info: {
         name: "YouTube Player",
-        description: "Play Youtube videos without leaving the tab"
+        description: "Adds the ability to use Youtube without leaving the Cookie Clicker tab (Needs a link)"
     },
     init: function() {
         if (l('youtubePlayerMod')) return;
