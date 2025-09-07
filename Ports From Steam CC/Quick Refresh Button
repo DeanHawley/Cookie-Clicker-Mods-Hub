@@ -1,0 +1,15 @@
+Game.registerMod("quickRefreshButton", {
+	init: function() {
+		const githubBase = "https://raw.githubusercontent.com/DeanHawley/Cookie-Clicker-Mods-Hub/main/Ports%20From%20Steam%20CC/Images/Quick%20Refresh%20Button";
+
+		l('storeTitle').insertAdjacentHTML('beforeend', `
+			<a style="width:24px;height:24px;position:absolute;bottom:4px;left:6px;display:block;padding:0px 0px;" class="smallFancyButton" id="cwsreset">
+				<div style="display:inline-block;background:url('` + githubBase + `/resetButton.png');width:24px;height:24px;position:relative;top:0px;left:0px;margin:0px 0px;"></div>
+			</a>
+		`);
+
+		AddEvent(l('cwsreset'), 'click', function quickRefreshClickHandler() {
+			Game.toReload = true;
+		});
+	}
+});
